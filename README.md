@@ -9,15 +9,15 @@ The email is deliverd to a server where the mail is parsed into a mongoDB databs
 ##Receive Mails
 Incoming emails are redirected to the parsing python script.
 This is done with a simple line in /etc/aliases
-  ARCHIVER: |/usr/bin/python /PATH/TO/SCRIPT/mailin.py
+  ```ARCHIVER: |/usr/bin/python /PATH/TO/SCRIPT/mailin.py```
 
 ##Parsing
 The mailin.py has some requirements which can be installed (on Debian/Ubuntu) with
 
 For character detection
-  sudo apt-get install pyhton-chardet
+  ```sudo apt-get install pyhton-chardet``
 For pythong -> MongoDB connection
- easy_install pymongo
+ ```easy_install pymongo```
 
 ##MongoDB
 To install mongoDB follow the guide on
